@@ -1,0 +1,41 @@
+            -:  ANGULAR DOCUMENTATION  :-
+    ______________________________________________
+
+
+    1.What is Angular?
+    A.> Angular is a popular javascript framework for building client-side single-page applications.
+      > Angular is not programming language like javascript.
+      > it is used for building client-side applications using HTML,CSS,JAVASCRIPT or TYPESCRIPT
+    2.what is framework?
+    A. Framework is a collection of pre-defined classes and methods which provides APIs when using application.
+
+    3.what is dependency and devdependency?
+      > dependency:directly angular depends libraries called.
+      > devdependency:while we are developing that time angular will depend those libraries called. 
+    4.what is the @NgModule decarator?
+      > every module decorated by @NgModule.
+      > @NgModule decarator takes metadata object that tells how to compile and run module code.
+         in that metadata object takes properties like declarations,imports,providers,bootstrap,...
+         * declarations accepts all components.
+         * imports stores modules.
+         * bootstrap in which component we will mention. that component will load intially after module loaded. 
+      > it identifies the modules's own components,directives and pipes.
+    5.what is typescript?
+      > typescript is a superset of javascript.
+      > main Advantage is typechecking.
+      >we can catch errors at compile time in typescript.
+    6.how to create Component?
+     > every component decarated by @Component decarator
+     > we should follow 3 steps:-
+        * create a typescript class & export it.
+            ex:-  @Component({})
+                  export class HeaderComponent{}
+
+        * decarate the class with @Component decarator
+            ex:-    @Component({
+                    selector: 'app-header',
+                    templateUrl: './header.component.html',
+                    styleUrls: ['./header.component.css']
+                    })
+        * declare the class in main module file.
+
